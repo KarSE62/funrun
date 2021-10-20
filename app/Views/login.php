@@ -20,7 +20,7 @@
        <h1>Login</h1>
         <input type="text" name="" placeholder="เลขบัตรประชาชน">
         <input type="password" name="" placeholder="รหัสผ่าน">
-        <input type="submit" name="" value="เข้าสู่ระบบ">
+        <button type="submit" >เข้าสู่ระบบ</button>
     </form>
     
 </body>

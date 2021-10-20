@@ -8,7 +8,4 @@ class RegisModel extends Model{
     protected $primaryKey = 'ID';
 }
 
-
-
-
 ?>

@@ -17,39 +17,39 @@
         <h1>ลงทะเบียนFun-Run</h1>
     </div>
     <div class="container">
-        <form action="/register/save" method="POST" class="signin-form">
+        <form action="/save" method="POST" class="signin-form">
         
             <div class="row" style="justify-content: center;">
                 <div class="col-md-3">
                     <label>เลขบัตรประชาชน</label>
-                    <input type="text" name="id_card" class="form-control" id="id_card" value="">
+                    <input type="text" name="id_card" class="form-control" id="id_card" value="<?= set_value('id_card'); ?>">
                 </div>
                 <div class="col-md-3">
                     <label>ชื่อ</label>
-                    <input type="text" name="name" class="form-control" id="name" value="">
+                    <input type="text" name="name" class="form-control" id="name" value="<?= set_value('name'); ?>">
                 </div>
                 
             </div>
             <div class="row" style="justify-content: center;">
                 <div class="col-md-3">
                     <label>อายุ</label>
-                    <input type="text" name="age" class="form-control" id="age" value="">
+                    <input type="text" name="age" class="form-control" id="age" value="<?= set_value('age'); ?>">
                 </div>
                 <div class="col-md-3">
                     <label>รหัสผ่าน</label>
-                    <input type="password" name="password" class="form-control" id="password" value="">
+                    <input type="password" name="password" class="form-control" value="<?= set_value('password'); ?>">
                 </div>
                 
             </div>
             <div class="row" style="justify-content: center;">
                 <div class="col-md-6">
                     <label>Email</label>
-                    <input type="text" name="email" class="form-control" id="email" value="">
+                    <input type="text" name="email" class="form-control" id="email" value="<?= set_value('email'); ?>">
                 </div>
             </div>
 
             <div class="button">
-                <button type="submit" class=" btn btn-primary" onclick="register()">
+                <button type="submit" class=" btn btn-primary">
                     บันทึกข้อมูล
                 </button>
                 <a href="/" class="btn btn-primary">กลับหน้าหลัก</a>

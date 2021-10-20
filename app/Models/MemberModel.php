@@ -8,7 +8,4 @@ class MemberModel extends Model{
     protected $primaryKey = 'id_card';
 }
 
-
-
-
 ?>
