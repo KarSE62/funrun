@@ -16,9 +16,27 @@
         <div class="row">
         <h1><?php echo " สวัสดีคุณ : " . $session->get('name') ?></h1>
         <div class="text-center">
-        <a href="/regisfunrun" class="btn btn-primary">ลงทะเบียนประเภทการแข่งขัน</a><br>
-        <a href="/showdetail" class="btn btn-primary">ตรวจสอบประเภทการแข่งขัน</a><br>
-        <a href="/logout" class="btn btn-danger">ออกจากระบบ</a>
+        <h1>คุณได้ทำการลงทะเบียนแข่งขัน</h1>
+        <div class="container">
+    <div class="row">
+    <div class="col-sm">
+      <h2>หมายเลขID : <?php echo $ID ?></h2>
+    </div>
+    <div class="col-sm">
+      <h2>ประเภทการแข่งขัน : <?php echo $category_name?></h2>
+    </div>
+    <div class="col-sm">
+      <h2>ระยะทาง : <?php echo $length ?></h2>
+    </div>
+  </div>
+
+      <h2>ค่าสมัคร : <?php echo $price ?></h2>
+    
+
+</div>   
+        
+
+        <a href="/menu" class="btn btn-danger">กลับเมนูหลัก</a>
         </div>
         </div>
     </div>
