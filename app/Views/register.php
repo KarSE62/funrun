@@ -12,6 +12,14 @@
 </head>
 
 <body>
+<div class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">ลงทะเบียน</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="">Search</a></li>
+            </ul>
+        </div>
 
     <div class="container">
         <h1>ลงทะเบียนFun-Run</h1>

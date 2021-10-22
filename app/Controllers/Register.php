@@ -28,7 +28,7 @@ class Register extends Controller
                 'id_card'=> $this->request->getVar('id_card'),
                 'name'=> $this->request->getVar('name'),
                 'age'=> $this->request->getVar('age'),
-                'password'=> $this->request->getVar('password'),
+                'password'=> password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
                 'email'=> $this->request->getVar('email')
             ];
             $modelMember->insert($data);

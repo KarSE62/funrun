@@ -34,8 +34,16 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/register', 'Register::index');
 $routes->get('/login', 'Login::index');
+$routes->get('/logout', 'Login::logout');
+$routes->get('/regisfunrun', 'Regisfunrun::index');
+$routes->get('/menu', 'Menu::index', ['filter' => 'auth']);
 
+$routes->get('/searchmenu', 'Search::index');
+$routes->get('/searchfunrun', 'Search::searchfunrun');
+
+$routes->post('/auth', 'Login::auth');
 $routes->post('/save', 'Register::save');
+$routes->post('/saveregis', 'Regisfunrun::saveregis');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
