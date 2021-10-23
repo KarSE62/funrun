@@ -36,7 +36,7 @@ class Login extends Controller
                 return redirect()->to('/login');
             }
         }else{
-            $session->setFlashdata('msg', 'เลขบัตรประชาชนไม่ถูกต้อง]');
+            $session->setFlashdata('msg', 'เลขบัตรประชาชนไม่ถูกต้อง');
             return redirect()->to('/login');
         }
 
